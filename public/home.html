@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Agro</title>
+        <meta charset="utf-8">
+
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href="css/grid.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+		
+			<!--- Header starts --->
+		
+            <header>
+                <div class="inner">
+					<!--- Logo image --->
+                    <h1 class="logo"><a href="home.html"></a></h1>
+					<!--- Menu bar starts --->
+                    <nav>
+                        <ul class="menu">
+                            <li class="current" ><a href="home.html"> Home </a></li>
+                            <li><a href="products.html" > Products </a></li>
+                            <li><a href="technology.html">Technology </a></li>
+                            <li><a href="pricing.html"> Pricing </a></li>
+                            <li><a href="contact.html"> Contact </a></li>
+                        </ul>
+                    </nav>
+					<!--- Menu bar ends --->
+                </div>
+
+				
+                    <!--- Slider starts --->
+                <div class="slider">
+                    <img class="mySlides" src="images/slide-1.jpg">
+                    <img class="mySlides" src="images/slide-2.jpg">
+                    <img class="mySlides" src="images/slide-3.jpg">
+                
+                  
+                    <a class="mp-prev" onclick="plusDivs(-1)"></a>
+                    <a class="mp-next" onclick="plusDivs(1)"></a>
+                </div>
+                  <!--- Slider ends --->	
+                
+                <!-- Slider js ---->
+                <script>
+                  
+                     var slideIndex = 1;
+                  showDivs(slideIndex);
+                  
+                  function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                  }
+                  
+                  function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                  }
+                 </script>
+
+            </header>
+			<!--- Header ends --->
+			
+			<!--- Content for home page starts --->
+            <section class="container">
+
+                <div class="row content-bg">
+
+                    <div class="adjust-1">
+
+                        <div class="wrap-col">
+
+							<!--- Content for products starts --->
+                            <section class="indent-bottom">
+                                <h2>Our products</h2>
+                                <div class="row hr-border-1">
+
+                                    <div class="adjust-2">
+
+                                        <div class="wrap-col">
+                                            <img src="images/page1-img1.jpg" class="img-indent-bot">
+
+                                            <dl class="def-list-1">
+                                                <dt><a href="#">Tomatoes</a></dt>
+                                                <dd>Tomato is consumed in diverse ways.</dd>
+                                            </dl>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="adjust-2">
+
+                                        <div class="wrap-col">
+                                            <img src="images/page1-img2.jpg" class="img-indent-bot">
+
+                                            <dl class="def-list-1">
+                                                <dt><a href="#">Brinjal</a></dt>
+                                                <dd>As a member of the genus, it is related to the tomato. </dd>
+                                            </dl>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="adjust-2">
+
+                                        <div class="wrap-col">
+                                            <img src="images/page1-img3.jpg" class="img-indent-bot">
+
+                                            <dl class="def-list-1">
+                                                <dt><a href="#">Cabbage</a></dt>
+                                                <dd>Cabbage can be green, purple or white.</dd>
+                                            </dl>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="adjust-2">
+
+                                            <div class="wrap-col">
+                                                <img src="images/page1-img4.jpg" class="img-indent-bot">
+
+                                                <dl class="def-list-1">
+                                                    <dt><a href="#">Potato</a></dt>
+                                                    <dd>Potato may be applied to plant and the edible tuber.</dd>
+                                                </dl>
+
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="alignright">
+                                    <a href="#" class="button">Read More</a>
+                                </div>
+
+                            </section>
+							<!--- Content for products ends --->
+
+							<!--- Banner Starts ---->
+                            <section class="banner-box">
+                                <div class="inside">
+                                    <h3>Need a useful advice from breeder?</h3>  
+                                    <h4>WE WANT TO RAISE YOUR CROPS & LIVESTOCK!</h4>
+                                    <blockquote class="quote indent-right">
+                                        <strong>This website has several pages: Home, Products, Technology, Pricing, Contacts Vivamus hendrerit mauris ut dui. gravida ut viverra lectus tincidunt.</strong> 
+                                        Cras mattis tempor eros nec tristique. Sed sed felis arcu, vel vehicula augue. Maecenas faucibus sagittis cursus. Fusce 
+                                        tincidunt, tellus eget tristique cursus, orci mi iaculis sem. 
+                                    </blockquote>
+                                    <div class="alignright indent-right"> 
+                                        <span class="author">John Smith<i>(breeder)</i></span>
+
+                                    </div>
+                                </div>
+
+                                <img src="images/banner-box-img.png" class="banner-img">
+
+                            </section>
+							<!--- Banner ends --->
+
+                        </div>
+                    </div>
+					
+					<!--- Side bar starts ---> 
+                    <aside class="adjust-2">
+                        <div class="wrap-col">
+                            <section class="indent-bottom-1">
+                                <h2 class="heading-1">Welcome!</h2>
+                                <p class="p1">
+                                    <strong>AgroPlus is one of the <a href="#">top food company</a> 
+                                        in the world. It supply the food in all over the world 
+                                        <a href="#">Angro plus</a> created by dummy.</strong>
+                                </p>
+
+                                <p class="hr-border-1">
+                                    This company made in 1994 and it is created by dummy. 
+                                    Now it have 65 branches in all over the world.
+                                    <a href="#">Angro plus</a> You can get the food of this from any shop. 
+                                    It also take the online order for delivering food.
+                                </p>
+                                <div class="alignright">
+                                    <a href="#" class="button">Read More</a>
+                                </div>
+                            </section>
+
+                            <section>
+                                <h2>Our Programs:</h2>
+                                <ul class="list-1">
+                                    <li><a href="#"> Biotechnology</a></li>
+                                    <li><a href="#"> Microbiology</a></li>
+                                    <li><a href="#"> Ecology</a></li>
+                                    <li><a href="#"> Botany</a></li>
+                                    <li><a href="#"> Gentics</a></li>
+                                    <li><a href="#"> Production</a></li>
+                                    <li><a href="#"> Bioinformatics</a></li>
+                                    <li><a href="#"> Technician</a></li>
+                                </ul>
+
+                            </section>
+
+
+                        </div>
+                    </aside>
+					<!--- Side bar ends ---> 
+
+                </div>
+            </section>
+			<!--- Content for home page ends --->
+			
+            <!--- Footer starts ---->
+            <footer>
+                <div class="container">
+                    <div class="row footer-bg">
+                        <div class="hr-border-2">
+                            <div class="wrapper">
+                                <div class="adjust-3">
+                                    <div class="wrap-col">
+									
+										<!--- First row of footer starts ---->
+                                        <div class="copyright">
+                                            &copy;2018<strong class="footer-logo">&nbsp;Agro-Plus</strong>
+                                            <div>we serve Quality food by <a href="home.html">agroplus.com</a></div>
+
+                                        </div>
+										<!--- First row of footer ends ---->
+                                    </div>
+                                </div>
+
+                                <div class="adjust-4">
+									
+									<!--- Second row of footer starts ---->
+                                    <div class="adjust-2">
+                                        <div class="wrap-col">
+                                            <h5 class="heading-1">Archives:</h5>
+                                            <ul class="footer-list">
+                                                <li><a href="#">October 2018</a></li>
+                                                <li><a href="#">December 2018</a></li>
+                                                <li><a href="#">Septemebr 2018</a></li>
+                                                <li><a href="#">November 2018</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+									<!--- Second row of footer ends ---->
+
+									<!--- Third row of footer starts ---->
+                                    <div class="adjust-2">
+                                        <div class="wrap-col">
+                                            <h5 class="heading-1">Links:</h5>
+                                            <ul class="footer-list">
+                                                <li><a href="#">Documentation</a></li>
+                                                <li><a href="#">Plugin</a></li>
+                                                <li><a href="#">Suggestion ideas</a></li>
+                                                <li><a href="#">Support forum</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+									<!--- Third row of footer ends ---->
+
+									<!--- Fourth row of footer starts ---->
+                                    <div class="adjust-2">
+                                        <div class="wrap-col">
+                                            <h5 class="heading-1">Support:</h5>
+                                            <ul class="footer-list">
+                                                <li><a href="#">October 2018</a></li>
+                                                <li><a href="#">November 2018</a></li>
+                                                <li><a href="#">December 2018</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+									<!--- Fourth row of footer ends ---->
+									
+									<!--- Fifth row of footer starts ---->
+                                    <div class="adjust-2">
+                                        <div class="wrap-col">
+
+                                             <ul class="social-list">
+                                                <li><a href="https://www.youtube.com/"><img src="images/social-icon-1.png"></a></li>
+                                                <li><a href="https://www.facebook.com/"><img src="images/social-icon-2.png"></a></li>
+                                                <li><a href="https://twitter.com/"><img src="images/social-icon-3.png"></a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+									<!--- Fifth row of footer ends ---->
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+			<!--- Footer ends ---->
+
+        </main>
+
+    </body>
+
+</html>
